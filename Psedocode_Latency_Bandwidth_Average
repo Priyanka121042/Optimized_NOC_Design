@@ -1,4 +1,4 @@
-Pseudocode to measure average latency and bandwidth using the simulator provided monitor output:
+//Pseudocode to measure average latency and bandwidth using the simulator provided monitor output:
 // Define the NOC class representing the Network-on-Chip
 class NOC {
     // Define variables and functions related to NOC design
