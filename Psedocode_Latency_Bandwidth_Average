@@ -1,0 +1,62 @@
+Pseudocode to measure average latency and bandwidth using the simulator provided monitor output:
+// Define the NOC class representing the Network-on-Chip
+class NOC {
+    // Define variables and functions related to NOC design
+};
+
+// Define the Simulator class to simulate the system behavior as mentioned in the problem statement
+class Simulator {
+public:
+        // Simulate NOC behavior and collect monitor output
+        // Return the monitor output
+    
+};
+
+// Define the avgLatency function to calculate average latency and bandwidth
+pair<double, double> avgLatency_BandWidth(NOC& nocdemo) {
+    // Initialize total latency, total bandwidth, and number of samples to zero
+    total_latency = 0
+    total_bandwidth = 0
+    num_samples = 0
+    
+    // Create an instance of the Simulator class
+    sim = new Simulator()
+    
+    // Continue simulation until the system is in a working state
+    while (System_in_working_state) {
+        // Run simulation and collect monitor output
+        int measurementOne = sim.readLatency(nocdemo);
+       int measurementTwo = sim.writeLatency(nocdemo);
+       int measurementThree = sim.Bandwidth(nocdemo);
+       
+        
+        // Extract latency and bandwidth measurements from monitor output
+            // Accumulate latency and bandwidth
+            total_latency += measurementOne;
+            total_latency += measurementTwo;
+            total_bandwidth += measurementThree;
+            // Increment the number of samples
+            num_samples++;
+        }
+    }
+    
+    // Calculate average latency and bandwidth
+    avg_latency = total_latency / num_samples
+    avg_bandwidth = total_bandwidth / num_samples
+    
+    // Return the average latency and bandwidth
+    return { avg_latency, avg_bandwidth }
+}
+
+// Main function to demonstrate the usage of the avgLatency function
+main() {
+    // Create an instance of the NOC class
+    my_noc = new NOC()
+    
+    // Calculate the average latency and bandwidth using the avgLatency function
+    avg_metrics = avgLatency_BandWidth(my_noc)
+    
+    // Print the average latency and bandwidth
+    print("Average Latency: " + avg_metrics.first)
+    print("Average Bandwidth: " + avg_metrics.second)
+}
